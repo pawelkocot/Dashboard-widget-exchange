@@ -1,0 +1,7 @@
+<div ng-controller="exchangeEditCtrl" class="exchange-edit">
+    <p>CHOOSE YOUR CURRENCY</p>
+    <select ng-model="baseCurrency" ui-select2="{ minimumResultsForSearch: 10 }">
+        <option ng-repeat="currency in currencies" value="{{ currency }}">{{ currency }}</option>
+    </select>
+    <button ng-click="save()">Save</button>
+</div>

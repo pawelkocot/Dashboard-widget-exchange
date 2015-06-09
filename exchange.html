@@ -1,0 +1,7 @@
+<div ng-controller="exchangeCtrl" class="exchange">
+    <div class="base-currency">{{ widget.options.dataBind.baseCurrency }}</div>
+
+    <div ng-repeat="(currency, rate) in exchangeRates" ng-hide="currency == widget.options.dataBind.baseCurrency" class="currency-block">
+        <span class="currency">{{ currency }}</span> <span class="rate">{{ rate }}</span>
+    </div>
+</div>
